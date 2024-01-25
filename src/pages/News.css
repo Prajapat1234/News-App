@@ -1,0 +1,26 @@
+#mainBox {
+    /* border: 1px solid red; */
+    /* margin-left: 11.5rem; */
+    padding: .8rem;
+    /* height: 100vh; */
+    display: grid;
+    color: rgb(0, 0, 0);
+    /* width: 200px; */
+    row-gap: 15px;
+    column-gap: 20px;
+    /* margin: 0 100px; */
+    grid-template-columns: repeat(3,1fr);
+    /* display: flex;      */
+    flex-wrap: wrap;
+   
+}
+
+@media screen and (max-width:600px) {
+ 
+    #mainBox{
+        grid-template-columns: repeat(1,1fr);
+    
+
+    }
+}
+ 

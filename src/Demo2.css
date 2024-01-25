@@ -1,0 +1,26 @@
+ img
+  {
+ 
+    height: 250px;
+    width: 200px; 
+    
+}
+
+#Demo2{
+    height: 400px;
+    width: 200px;
+    border: 2px solid black; 
+    border-radius: 20px;
+    color:white;
+    
+}
+
+
+button{
+    height: 50px;
+    width: 60px;
+    border-radius: 20px;
+    background-color: red;
+    color: white;
+    margin-left: 500px;
+  }
