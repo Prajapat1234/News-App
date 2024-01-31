@@ -1,7 +1,7 @@
 
 
 
-import React, { useState } from 'react'
+import React, { useState ,useEffect } from 'react'
 
 import "./pages/Navbar.css"
 import MenuIcon from '@mui/icons-material/Menu';
@@ -14,16 +14,18 @@ export default function Navbar1({ setSearchTerm }) {
     let [value, setValue] = useState();
     let [display, setDisplay] = useState(true);
 
-    // function GetData(e) {
-    //     e.preventDefault();
-    //     SetNews(e.target[0].value)
-    //     console.log(e.target[0].value)
-    // }
-
     const handleSearch = () => {
         setSearchTerm(value);
         // console.log(value)
     }
+
+    useEffect(() => {
+        const handleResize = () => {
+            setDisplay(window.innerWidth > 600);
+        };
+        window.addEventListener('resize', handleResize);
+    }, []);
+
     return (
         <>
             <nav>
