@@ -23,6 +23,7 @@ export default function Navbar1({ setSearchTerm }) {
         const handleResize = () => {
             setDisplay(window.innerWidth > 600);
         };
+        handleResize();
         window.addEventListener('resize', handleResize);
     }, []);
 
